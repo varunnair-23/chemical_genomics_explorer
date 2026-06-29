@@ -1,0 +1,23 @@
+project: 
+  name: chemical_genomics_explorer
+  phase: census_ingestion
+
+paths: 
+  processed_data: data/processed
+  logs: logs
+  results: results
+
+census: 
+  organism: Homo sapiens
+  organism_key: homo_sapiens
+  measurement_name: RNA
+  tissue_general: liver
+  disease: normal
+  assay: "10x 3' v3"
+  max_cells: 5000
+
+qc:
+  min_genes_per_cell: 200
+  max_mito_percent: 10.0
+  normalize_target_sum: 10000
+  
